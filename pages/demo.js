@@ -6,6 +6,7 @@ import Sidebar from '../components/sidebar'
 
 export default function demo() {
     return (
+        <center> 
         <div>
             <Head>
                 <title>Login</title>
@@ -59,6 +60,7 @@ export default function demo() {
 
 
         </div>
+        </center>
 
     )
 }

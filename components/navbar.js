@@ -1,25 +1,23 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 export default function navbar() {
     return (
-        <div>
+        
+            <div class='main'>
+                <Image className='logo' src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+                <nav>
+                    <ul className ="nav__links">
+                        <li className="nav__CSS"><Link href="./"><a href="">Home</a></Link></li>
+                        <li className="nav__CSS"><Link href="./demo"><a href="">Demo</a></Link></li>
+                        <li className="nav__CSS"><Link href={`https://www.google.com/`}><a href="https://www.google.com/"> Help !</a></Link></li>
+                        
+                    </ul>
+                </nav>
+                <a class="cta" href="#"><button class="nav__CSS"> Contact</button></a>
+            </div>
+        
 
-            <nav>
-                <la>
-                    <Link href="./">
-                        <a href="">Home</a>
-                    </Link>
-                </la>
-                <la>
-                    <Link href="./demo">
-                        <a href="">Demo</a>
-                    </Link>
-                </la>
-                <la>Help</la>
-                <la>List</la>
-
-            </nav>
-        </div>
     )
 }
