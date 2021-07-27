@@ -17,7 +17,7 @@ export default function navbar() {
                         
                     </ul>
                 </nav>
-                <a className="cta" href="#"><button class="nav__CSS"> Contact</button></a>
+                <a className="cta" href="#"><button className="nav__CSS"> Contact</button></a>
             </div>
         
 
