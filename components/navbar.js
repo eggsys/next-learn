@@ -2,11 +2,13 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 
+
+
 export default function navbar() {
     return (
-        
+            
             <div class='main'>
-                <Image className='logo' src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+                <Image className='logo' src="/demo-logo.png" alt="Vercel Logo" width={150} height={75} />
                 <nav>
                     <ul className ="nav__links">
                         <li className="nav__CSS"><Link href="./"><a href="">Home</a></Link></li>
