@@ -7,7 +7,7 @@ import Image from 'next/image'
 export default function navbar() {
     return (
             
-            <div class='main'>
+            <div className='main'>
                 <Image className='logo' src="/demo-logo.png" alt="Vercel Logo" width={150} height={75} />
                 <nav>
                     <ul className ="nav__links">
@@ -17,7 +17,7 @@ export default function navbar() {
                         
                     </ul>
                 </nav>
-                <a class="cta" href="#"><button class="nav__CSS"> Contact</button></a>
+                <a className="cta" href="#"><button class="nav__CSS"> Contact</button></a>
             </div>
         
 
