@@ -3,22 +3,24 @@ import styles from '../styles/Login.module.css'
 const login = () => {
     return (
         <body className={styles.container}>
-            <div className="center">
+            <div className={styles.center}>
                 <h1> Login </h1>
                 <form method="post">
-                    <div className="txt_field">
+                    <div className={styles.txt_field}>
                         <input type="text" required></input>
+                            <span></span>
                         <label>username</label>
                     </div>
-                    <div className="txt_field">
+                    <div className={styles.txt_field}>
                         <input type="password" required></input>
-                        <label>username</label>
+                        <span></span>
+                        <label>Password</label>
                     </div>
-                    <div className="pass">forgot password?</div>
-                    <input type="submit" value="login"></input>
-                    <div className="signup_link">
-                        Not a member
-                        <a href="#">Signup</a>
+                    <div className={styles.pass}>forgot password?</div>
+                    <input className={styles.submit} type="submit" value="login"></input>
+                    <div className={styles.signup_link}>
+                        Not a member? 
+                        <a href="#"> Signup</a>
                     </div>
                 </form>
             </div>
