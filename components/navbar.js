@@ -14,6 +14,7 @@ export default function navbar() {
                         <li className="nav__CSS"><Link href="./"><a href="">Home</a></Link></li>
                         <li className="nav__CSS"><Link href="./demo"><a href="">Demo</a></Link></li>
                         <li className="nav__CSS"><Link href={`https://www.google.com/`}><a href="https://www.google.com/"> Help !</a></Link></li>
+                        <li className="nav__CSS"><Link href="./login"><a href="">Login</a></Link></li>
                         
                     </ul>
                 </nav>
