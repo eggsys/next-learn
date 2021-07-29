@@ -1,3 +1,4 @@
+import { type } from 'language-tags';
 import React, { useState } from 'react';
 import styles from '../styles/Login.module.css'
 
@@ -5,26 +6,31 @@ const login = () => {
 
 
 
-    const [state, setstate] = useState({
-        email: 'Hamza',
-        username : '',
-        password: '',
-        
-    })
+    const [usr, setstateUsr] = useState(0)
+    const [pwd, setstatePwd] = useState(0)
 
 
     const handlechange = event => {
-        setstate ({ [event.target.name]: event.target.value })
-        console.log(state)
+        setstateUsr ({ [event.target.name]: event.target.value })
+
+        console.log(typeof(usr))
+        console.log(event.target.name)
+        console.log(usr)
+    }
+
+    const handlePwd = event => {
+        setstatePwd ({ [event.target.name]: event.target.value })
+        
+        console.log(event.target.name)
+        console.log(pwd)
     }
   
     const handleSubmit = event => {
         event.preventDefault()
         console.log("SUBMIT !")        
-        console.log(state)
-        console.log("username : ",state.username)
-        console.log("password : ",state.password)
-
+        console.log(usr)
+        console.log(pwd)
+        
 
         alert("WTF")
     }
@@ -39,12 +45,12 @@ const login = () => {
                 <h1> Login </h1>
                 <form method="post" onSubmit={handleSubmit}>
                     <div className={styles.txt_field}>
-                        <input type="text" name="username" onChange={handlechange} required></input>
+                        <input type="text" name="username1" onChange={handlechange} required></input>
                         <span></span>
                         <label>username</label>
                     </div>
                     <div className={styles.txt_field}>
-                        <input type="password" name="password" onChange={handlechange} required ></input>
+                        <input type="password" name="password1" onChange={handlePwd} required ></input>
                         <span></span>
                         <label>Password</label>
                     </div>
